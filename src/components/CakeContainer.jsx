@@ -1,8 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types'; // ES6
-
-import { buyCakes } from '../hooks/index';
+import buyCakes from '../hooks/cakes/action';
 
 function CakeContainer({ numOfCakes, buyCake }) {
   return (
