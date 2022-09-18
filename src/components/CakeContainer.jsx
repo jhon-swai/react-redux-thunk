@@ -2,10 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types'; // ES6
 import buyCakes from '../hooks/cakes/action';
+import ReduxHooksContainer from './ReduxHooksContainer';
 
 function CakeContainer({ numOfCakes, buyCake }) {
   return (
     <div>
+      <ReduxHooksContainer />
       {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
       <p>The number of Cakes -{numOfCakes}</p>
       <button type="button" onClick={() => buyCake()}>
